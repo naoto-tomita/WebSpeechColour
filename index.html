@@ -12,12 +12,25 @@ Naoto Tomita</p>
   <meta charset="utf-8">
   <title>Web Speech</title>
   <script>
-  const userAgent = window.navigator.userAgent.toLowerCase();
 
-if(userAgent.indexOf('chrome') != -1) {
-  alert('このブラウザは音声合成に対応しています🎉');
+
+  var userAgent = window.navigator.userAgent.toLowerCase();
+
+if(userAgent.indexOf('msie') != -1 ||
+        userAgent.indexOf('trident') != -1) {
+    alert('このブラウザは音声合成に対応していません😭 Google Chromeで開いてください💦');
+} else if(userAgent.indexOf('edge') != -1) {
+    alet('このブラウザは音声合成に対応していません😭 Google Chromeで開いてください💦');
+} else if(userAgent.indexOf('chrome') != -1) {
+    alert('このブラウザは音声合成に対応しています🎉');
+} else if(userAgent.indexOf('safari') != -1) {
+    alert('このブラウザは音声合成に対応していません😭 Google Chromeで開いてください💦');
+} else if(userAgent.indexOf('firefox') != -1) {
+    alert('このブラウザは音声合成に対応していません😭 Google Chromeで開いてください💦');
+} else if(userAgent.indexOf('opera') != -1) {
+    alert('このブラウザは音声合成に対応していません😭 Google Chromeで開いてください💦');
 } else {
-  alert('このブラウザは音声合成に対応していません😭 Google Chromeで開いてください💦');
+    alert('このブラウザは音声合成に対応していません😭 Google Chromeで開いてください💦');
 }
 
   </script>

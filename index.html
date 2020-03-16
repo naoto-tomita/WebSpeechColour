@@ -11,6 +11,14 @@ Naoto Tomita</p>
 <head>
   <meta charset="utf-8">
   <title>Web Speech</title>
+  <script>
+    if ('speechRecognition' in window) {
+      alert("このブラウザは音声認識に対応しています。🎉")
+    } else {
+      alert("このブラウザは音声認識に対応していません。😭")
+    }
+  </script>
+
 </head>
 <body>
   <button>Start</button>

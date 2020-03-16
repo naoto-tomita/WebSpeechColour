@@ -12,11 +12,14 @@ Naoto Tomita</p>
   <meta charset="utf-8">
   <title>Web Speech</title>
   <script>
-    if ('speechRecognition' in window) {
-      alert("このブラウザは音声認識に対応しています。🎉")
-    } else {
-      alert("このブラウザは音声認識に対応していません。😭")
-    }
+  const userAgent = window.navigator.userAgent.toLowerCase();
+
+if(userAgent.indexOf('chrome') != -1) {
+  alert('このブラウザは音声合成に対応しています🎉');
+} else {
+  alert('このブラウザは音声合成に対応していません😭 Google Chromeで開いてください💦');
+}
+
   </script>
 
 </head>
